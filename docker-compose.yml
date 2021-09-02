@@ -5,7 +5,9 @@ services:
     container_name: rabbitmq
     image: bitnami/rabbitmq
     ports:
+      ## RabbitMQ Broker
       - "5672:5672"
+      ## Interface WEB
       - "15672:15672"
     volumes:
       - rabbitmq:/bitnami
