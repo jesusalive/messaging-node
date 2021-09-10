@@ -47,6 +47,12 @@ services:
     environment:
       KAFKA_BROKERCONNECT: kafka:29092
 
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+     - "6379:6379"
+
 volumes:
   rabbitmq:
     driver: local
