@@ -20,7 +20,7 @@ export const connectToRabbitMq = async (): Promise<any> => {
                 channel.bindQueue('q.other-service', 'e.agreement.created', '')
 
                 setTimeout(() => resolve(channel), 500)
-            });
+            })
         })
     })
 }
